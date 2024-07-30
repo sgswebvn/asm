@@ -1,0 +1,240 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: 'Signika', sans-serif;
+    background-color: #eeeeee;
+    /* color: #de0404; */
+    cursor: default;
+}
+body::-webkit-scrollbar {
+    width: 0.7vw;
+  }
+body::-webkit-scrollbar-thumb{
+    border-radius: 20px;
+    background-color: #d8b979;
+}
+body::-webkit-scrollbar-thumb:hover{
+    background-color: #c6a45f;
+}
+body::-webkit-scrollbar-track {
+    background-color: #dbdbdb;
+}
+.contain{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+.content{
+    width: 100%;
+    background-color: #ffffff;
+    padding: 20px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.content form{
+    /* margin: auto auto; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+}
+.content form>.form{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 80%;
+    gap: 20px;
+}
+.content form>.form div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.content form>.form div label{
+    font-size: 19px;
+    text-transform: capitalize;
+}
+.content form>.form div input{
+    border: 0;
+    border-bottom: 1px solid #ababab;
+    outline: none;
+    width: 90%;
+    padding: 5px 15px;
+    font-size: 17px;
+    background-color: transparent;
+}
+.content form>.form div input[type="file"]{
+    border: 0;
+}
+.content form>.form div select{
+    width: 200px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+.content form>.form div .image{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.content form>.form div .image>img{
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+}
+.content form>.form div div p{
+    width: fit-content;
+    padding-left: 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Dosis', sans-serif;
+} 
+.content form>.form div div p input{
+    cursor: pointer;
+    width: fit-content;
+}
+.content form>button{
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #d8b979;
+    color: white;
+    border: 1px solid #d8b979;
+    width: 50%;
+    font-family: 'Signika', sans-serif;
+    font-size: 18px;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+.content form>button:hover{
+    background-color: white;
+    color: #d8b979;
+}
+.content form>h2{
+    font-size: 27px;
+    text-transform: capitalize;
+}
+.content form>.form-category{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    gap: 20px;
+}
+.content form>.form-category div input{
+    width: 100%;
+}
+.content table{
+    width: 100%;
+    margin: 0 auto;
+    color: white;
+    border: 1px solid #c6a45f;
+    border-collapse: collapse;
+}
+.content table tr{
+    width: 100%;
+    position: relative;
+}
+.content table th:last-child{
+    min-width: 200px;
+}
+.content table tr th{
+    padding: 10px 15px;
+    background-color: #c6a45f;
+    font-size: 19px;
+}
+.content table tr td{
+    border: 1px solid #d8b979;
+    padding: 10px 15px;
+    color: black;
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 700;
+    position: relative;
+    text-transform: capitalize;
+}
+.content table tr td button{
+    padding: 5px 30px;
+    color: white;
+    font-weight: 800;
+    font-size: 15px;
+    border: 1px solid #d8b979;
+    background-color: #d8b979;
+    border-radius: 5px;
+    font-family: 'Dosis', sans-serif;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+.content table tr td button:hover{
+    background-color: white;
+    color: #d8b979;
+}
+.content table tr td .popup{
+    background-color: #d8b979;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    width: fit-content;
+    position: absolute;
+    top: 10px;
+    left: 60%;
+    z-index: 10;
+    white-space: nowrap;
+}
+.content table tr td img{
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+}
+.content table tr td div{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
+}
+.content table tr td div a{
+    padding: 5px 15px;
+    background-color: #d8b979;
+    border: 1px solid #d8b979;
+    color: white;
+    border-radius: 5px;
+    transition: .2s ease-in-out;
+}
+.content table tr td div a:hover{
+    background-color: #ffffff;
+    color: #d8b979;
+}
+.content table tr td div button{
+    padding: 5px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: #d5d5d5;
+    border: 2px solid #d5d5d5;
+    font-family: 'Dosis', sans-serif;
+    color: #6d6d6d;
+    font-weight: 800;
+    cursor: pointer;
+}
+.content table .pin::after{
+    content: "";
+    background-color: #ee4d2d;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    position: absolute;
+    left: calc(100% + 5px);
+    transform: translateY(-30%);
+}

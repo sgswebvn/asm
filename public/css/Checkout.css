@@ -1,0 +1,263 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: 'Dosis', sans-serif;
+    background-color: #fbfbfb;
+    min-height: 110vh;
+}
+body::-webkit-scrollbar {
+    width: 0.7vw;
+  }
+body::-webkit-scrollbar-thumb{
+    border-radius: 20px;
+    background-color: #d8b979;
+}
+body::-webkit-scrollbar-thumb:hover{
+    background-color: #c6a45f;
+}
+body::-webkit-scrollbar-track {
+    background-color: #dbdbdb;
+}
+.content form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 90%;
+    margin: 0 auto;
+}
+.option{
+    width: 100%;
+    display: flex;
+    gap: 5px;
+}
+.option button{
+    width: 100%;
+    border-radius: 20px;
+    background-color: #ffffff;
+    padding: 10px 0px;
+    border: 1px solid #ee4d2d;
+    color: #ee4d2d;
+    text-transform: capitalize;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 800;
+    font-family: 'Dosis', sans-serif;
+}
+.option .active{
+    color: white;
+    background-color: #ee4d2d;
+}
+.product{
+    display: flex;
+    gap: 10px;
+}
+.product .info_option{
+    width: 100%;
+    height: fit-content;
+}
+.product .info_option>p{
+    padding-left: 10px;
+    text-transform: capitalize;
+    font-weight: 800;
+    font-size: 17px;
+    margin-bottom: 7px;
+}
+.product .info_option .info_option_content{
+    padding: 20px;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0 0 10px 0px rgb(221, 221, 221);
+}
+.product .info_option .info_option_content .item{
+    display: flex;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e1e1e1;
+    gap: 10px;
+}
+.product .info_option .info_option_content .item input{
+    background-color: transparent;
+    border: 0;
+    width: 100%;
+    outline: none;
+    font-family: 'Dosis', sans-serif;
+    font-size: 15px;
+}
+.product .info_option .info_option_content .last_item{
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+.product .info_option .info_option_content .last_item input{
+    border: 0;
+    outline: none;
+    font-family: 'Dosis', sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    max-width: 110px;
+}
+.product .info_product{
+    width: 50%;
+}
+.product .info_product p{
+    padding-left: 10px;
+    text-transform: capitalize;
+}
+.product .info_product>p{
+    font-weight: 800;
+    font-size: 17px;
+    margin-bottom: 7px;
+}
+.product .info_product .info_product_content{
+    padding: 0px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0 0 10px 0px rgb(221, 221, 221);
+}
+.product .info_product .info_product_content>div{
+    border-bottom: 1px solid #e1e1e1;
+}
+.product .info_product .info_product_content>div:last-child{
+    border-bottom: 0;
+}
+.product .info_product .info_product_content .list_item{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-height: 300px;
+    overflow: scroll;
+    overflow-x: hidden;
+    padding: 0 10px;
+    margin: 5px 0;
+}
+.product .info_product .info_product_content .list_item::-webkit-scrollbar {
+    width: 3px;
+  }
+.product .info_product .info_product_content .list_item::-webkit-scrollbar-thumb{
+    border-radius: 20px;
+    background-color: #d8b979;
+}
+.product .info_product .info_product_content .list_item::-webkit-scrollbar-thumb:hover{
+    background-color: #c6a45f;
+}
+.product .info_product .info_product_content .list_item::-webkit-scrollbar-track {
+    background-color: #ffffff;
+}
+.product .info_product .info_product_content .list_item>.item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.product .info_product .info_product_content .list_item>.item img{
+    width: 70px;
+    height: 70px;
+}   
+.product .info_product .info_product_content .list_item>.item div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 16px;
+}
+.product .info_product .info_product_content .list_item>.item div h3{
+    font-size: 18px;
+    text-transform: capitalize;
+}
+.product .info_product .info_product_content .list_item>.item div p{
+    font-size: 16px;
+    padding: 0;
+}
+.product .info_product .info_product_content .list_item>.item div span{
+    font-size: 16px;
+    color: #d8b979;
+    font-weight: 700;
+}
+.product .info_product .info_product_content .info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    padding: 10px 0 ;
+}
+.product .info_product .info_product_content .info .item{
+    max-width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.product .info_product .info_product_content .info .top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.product .info_product .info_product_content .info .top .quantity{
+    max-width: 40%;
+    height: 20px;
+}
+.product .info_product .info_product_content .info .top .quantity span{
+    font-weight: 800;
+}
+.product .info_product .info_product_content .info .item{
+    width: 100%;
+}
+.product .info_product .info_product_content .info .item:last-child p{
+    font-weight: 800;
+}
+.product .info_product .info_product_content .info .item:last-child span{
+    color: #d8b979;
+}
+.product .info_product .info_product_content .button{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+.product .info_product .info_product_content .button textarea{
+    width: 100%;
+    height: 70px;
+    outline: none;
+    border: 0;
+    padding: 10px;
+    font-family: 'Dosis', sans-serif;
+    font-size: 18px;
+}
+.product .info_product .info_product_content .button button{
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-weight: 800;
+    background-color: #ee4d2d;
+    border: 1px solid #ee4d2d;
+    color: white;
+    cursor: pointer;
+    font-family: 'Dosis', sans-serif;
+    font-size: 17px;
+    font-weight: 800;
+    transition: .2s ease-in-out;
+}
+.product .info_product .info_product_content .button #order_btn:hover{
+    background-color: white;
+    color: #ee4d2d;
+}
+.product .info_product .info_product_content .button button:last-child{
+    background-color: white;
+    border: 1px solid #d8b979;
+    color: #d8b979;
+}
+.product .info_product .info_product_content .button button:last-child:hover{
+    background-color: #d8b979;
+    color: white;
+}
+.product .info_product .info_product_content .button .disabled_btn{
+    background-color: #c8c8c8;
+    border: 1px solid #5d5d5d;
+    color: white;
+}
